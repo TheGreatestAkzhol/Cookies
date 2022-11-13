@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+    <servlet>
+        <servlet-name>SetCookiesServlet</servlet-name>
+        <servlet-class>com.example.javaeecookies.cookiesexample.SetCookiesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SetCookiesServlet</servlet-name>
+        <url-pattern>/set-cookies</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>GetCookiesServlet</servlet-name>
+        <servlet-class>com.example.javaeecookies.cookiesexample.GetCookiesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetCookiesServlet</servlet-name>
+        <url-pattern>/get-cookies</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DeleteCookiesServlet</servlet-name>
+        <servlet-class>com.example.javaeecookies.cookiesexample.DeleteCookiesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteCookiesServlet</servlet-name>
+        <url-pattern>/delete-cookies</url-pattern>
+    </servlet-mapping>
+</web-app>
